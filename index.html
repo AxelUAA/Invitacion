@@ -24,11 +24,11 @@
 
     <!-- Contenedor principal de la invitación (Glassmorphism) -->
     <div class="invitation-card glass">
-        <h1 class="glitch" data-text="CREW">CREW</h1>
-        <p class="subtitle">La noche que no recordarás pero nunca olvidarás.</p>
+        <h1 class="glitch" data-text="CREW">CREW Fest</h1>
+        <p class="subtitle">Designed by axel.</p>
 
         <div class="details">
-            <a href="https://maps.app.goo.gl/HwbBBQvPUW2ZC9q19" class="detail-item" target="_blank"
+            <a href="" class="detail-item" target="_blank"
                 style="text-decoration: none; color: inherit; cursor: pointer;">
                 <span class="icon">📍</span>
                 <span>Ver Ubicación (Casa de Maldo)</span>
@@ -37,10 +37,18 @@
                 <span class="icon">🕒</span>
                 <span>Sábado 18 de Abril, 10:00 PM</span>
             </div>
-            <div class="detail-item">
-                <span class="icon">🍸</span>
-                <span>Spoiler...</span>
-            </div>
+            <details class="detail-item spoiler" style="cursor: pointer;">
+                <summary>
+                    <span class="icon"></span>
+                    <span>¿Qué habrá? (Spoiler)</span>
+                </summary>
+                <div class="spoiler-content">
+                    <ul>
+                        <li>🎸 <span>2 Grupos en vivo</span></li>
+                        <li>🍸 <span>Barra Libre</span></li>
+                    </ul>
+                </div>
+            </details>
         </div>
 
         <button id="playBtn" class="neon-btn">
