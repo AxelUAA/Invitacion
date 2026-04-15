@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldo's Party</title>
+    <!-- Google Fonts para tipografías modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=Space+Grotesk:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Enlace al archivo CSS en la carpeta estilos -->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+
+<body>
+    <!-- Capa de fondo con animación -->
+    <div class="background-animation"></div>
+
+    <!-- Canvas para el ecualizador visual de la música -->
+    <canvas id="visualizer"></canvas>
+
+    <!-- Contenedor principal de la invitación (Glassmorphism) -->
+    <div class="invitation-card glass">
+        <h1 class="glitch" data-text="MALDO'S PARTY">MALDO'S PARTY</h1>
+        <p class="subtitle">La noche que no recordarás pero nunca olvidarás.</p>
+
+        <div class="details">
+            <a href="https://maps.app.goo.gl/HwbBBQvPUW2ZC9q19" class="detail-item" target="_blank"
+                style="text-decoration: none; color: inherit; cursor: pointer;">
+                <span class="icon">📍</span>
+                <span>Ver Ubicación (Casa de Maldo)</span>
+            </a>
+            <div class="detail-item">
+                <span class="icon">🕒</span>
+                <span>Sábado, 10:00 PM</span>
+            </div>
+            <div class="detail-item">
+                <span class="icon">🍸</span>
+                <span>Barra libre</span>
+            </div>
+        </div>
+
+        <button id="playBtn" class="neon-btn">
+            ▶ Asistiré
+        </button>
+
+        <p class="note">⚠️ Solo acceso exclusivo</p>
+    </div>
+
+    <!-- Audio Track proporcionado por el usuario -->
+    <audio id="partySound" src="../music/11. Cholo - Victor Mendivil.mp3" autoplay loop preload="auto"></audio>
+
+    <!-- SweetAlert2 para la alerta de confirmación -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Script de lógica y generación musical -->
+    <script src="app.js"></script>
+</body>
+
+</html>
